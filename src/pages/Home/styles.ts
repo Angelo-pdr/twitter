@@ -22,12 +22,10 @@ export const ContainerFeed = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
 
   #feedList {
     width: 100%;
-    height: 100%;
   }
 `
 

@@ -38,4 +38,8 @@ export const Flex = styled.div`
   justify-content: space-between;
   flex-direction: column;
   padding: 0px 0.5rem;
+
+  p {
+    word-wrap: break-word;
+  }
 `
