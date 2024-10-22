@@ -16,8 +16,8 @@ const Form = () => {
         password: values.password
       })
       .then(function (response) {
-        console.log(response.data)
         navigate('/login')
+        console.log(response.data)
       })
       .catch(function (error) {
         if (error.response) {
