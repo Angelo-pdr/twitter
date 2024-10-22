@@ -2,8 +2,10 @@ import * as C from './styles'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { api } from '../../lib/axios'
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
+  const navigate = useNavigate()
   const onSubmit = (values: any) => {
     console.log(values)
     api
@@ -15,6 +17,7 @@ const Form = () => {
       })
       .then(function (response) {
         console.log(response.data)
+        navigate('/login')
       })
       .catch(function (error) {
         if (error.response) {
